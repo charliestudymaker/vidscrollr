@@ -51,7 +51,7 @@
 
 	/* Layer with position absolute in order to have it over the video
 	* --------------------------------------- */
-	#section0 .layer{
+	 .layer{
 		position: absolute;
 		z-index: 4;
 		width: 100%;
@@ -149,21 +149,27 @@
 	  <video onclick="UnMuteVid(1)" class=vidFull id="myVideo1" data-autoplay muted loop>
     			<source src="IMG_5415.MOV" type="video/mp4">
 	  </video>
+
+	  <div id=vctrl1 class=layer style='display:block;'><h1>Click for Sound</h1></div>
 	  
 	</div>
 	<div class="section" id="section1">
 	  <video class=vidFull id="myVideo2"  data-autoplay loop muted  onclick="UnMuteVid(2)">
     			<source src="IMG_5410.MOV" type="video/mp4">
-		</video>
-	  <h1>Henry and Dad</h1>
+	  </video>
+
+  	  <div id=vctrl2 class=layer style='display:block;'><h1>Click for Sound</h1></div>
+
 
 	</div>
 	<div class="section" id="section2">
 	  <video class=vidFull id="myVideo3"  data-autoplay loop muted onclick="UnMuteVid(3)">
 	        			<source src="IMG_5384.MOV" type="video/mp4">
 
-		</video>
-	  <h1>Crosby </h1>
+	  </video>
+
+   	  <div id=vctrl3 class=layer style='display:block;'><h1>Click for Sound</h1></div>
+
 
 	</div>
 	
@@ -184,8 +190,7 @@
   function UnMuteVid(n)
   {
       document.getElementById('myVideo'+n).muted=!document.getElementById('myVideo'+n).muted;
-//      document.getElementById('myVideo2').muted=!document.getElementById('myVideo2').muted;
-//      document.getElementById('myVideo3').muted=!document.getElementById('myVideo3').muted;
+      document.getElementById('vctrl'+n).style.display='none';
   }
 
   
