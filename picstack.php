@@ -1,10 +1,44 @@
 <?php
+
 include "ps_head.php";
 include "ps_funcs.php";
+
+include "ps_uploadhandler.php";
+
 ?>
 
+<script>
+   function ShowUp()
+   	    {
+	    document.getElementById('uploadDiv').style.display='block';
+	    }
+
+   function SendPic()
+   	    {
+	    document.UpLForm.submit();
+	    }
+</script>
+
 <body>
+
+
+<div class=section>
+<form name=UpLForm enctype='multipart/form-data' action=picstack.php method='POST'>
+<input type="hidden" name="MAX_FILE_SIZE" value="10000000" >
+
+   <a href=# onclick=document.getElementById('camerastart').click(); style='font-size:42px;' >Add Picture</a> 
+   <input onchange=ShowUp();  id=camerastart style='display:none;' type="file"  name=uploadedfile accept="image/*" capture="camera">
+
+   <div id=uploadDiv style='display:none;' >
+	<input    type=button onclick=SendPic();  value='UPLOAD Picture'>
+   </div>
+</form>
+</div>
+
+
+
 <div id="fullpage">
+
 
 <?php
 GenStackElement("vid","IMG_5415.MOV");

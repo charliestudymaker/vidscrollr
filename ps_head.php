@@ -5,6 +5,8 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>VidScrollR</title>
 	<meta name="author" content="Alvaro Trigo Lopez" />
+  
+  
     <meta name="description" content="fullPage full-screen background videos." />
     <meta name="keywords"  content="fullpage,jquery,demo,screen,fullscreen,video,full-screen" />
 	<meta name="Resource-type" content="Document" />
@@ -93,6 +95,15 @@
 		<script type="text/javascript">
 			 var console = { log: function() {} };
 		</script>
-	<![endif]-->
+		<![endif]-->
+
+
+      <link rel = "stylesheet" href = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+      <script src = "https://code.jquery.com/jquery-1.11.3.min.js"></script>
+      <script src = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		 
 </head>
 
