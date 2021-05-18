@@ -101,7 +101,7 @@
 <div id="fullpage">
 	<div class="section " id="section0">
 
-	  <video onclick="UnMuteVid(1)" class=vidFull id="myVideo1" data-autoplay muted loop>
+	  <video onclick="UnMuteVid(1)" class=vidFull id="myVideo1" data-autoplay muted loop playsinline >
     			<source src="IMG_5415.MOV" type="video/mp4">
 	  </video>
 
@@ -109,7 +109,7 @@
 	  
 	</div>
 	<div class="section" id="section1">
-	  <video class=vidFull id="myVideo2"  data-autoplay loop muted  onclick="UnMuteVid(2)">
+	  <video class=vidFull id="myVideo2"  data-autoplay loop muted  playsinline  onclick="UnMuteVid(2)">
     			<source src="IMG_5410.MOV" type="video/mp4">
 	  </video>
 
@@ -117,16 +117,25 @@
 
 
 	</div>
+	
 	<div class="section" id="section2">
-	  <video class=vidFull id="myVideo3"  data-autoplay loop muted onclick="UnMuteVid(3)">
+	  <video class=vidFull id="myVideo3"  data-autoplay loop muted playsinline  onclick="UnMuteVid(3)">
 	        			<source src="IMG_5384.MOV" type="video/mp4">
 
 	  </video>
 
    	  <div id=vctrl3 class=layer style='display:block;'><h1>Click for Sound</h1></div>
-
-
 	</div>
+
+
+	<div class="section" id="section3">
+
+	  <img class=vidFull src=https://webedc-files.s3.amazonaws.com/dev/prototype/imagewall/-10-il_1588xN.2376894700_2rqu.jpg>	  
+	  
+	</div>
+	
+
+
 	
 </div>
 
