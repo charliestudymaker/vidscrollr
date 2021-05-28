@@ -41,11 +41,9 @@ include "ps_uploadhandler.php";
 
 
 <?php
-GenStackElement("vid","IMG_5415.MOV");
-GenStackElement("img","https://webedc-files.s3.amazonaws.com/dev/prototype/imagewall/-10-il_1588xN.2376894700_2rqu.jpg");
 
-GenStackElement("vid","IMG_5415.MOV");
-GenStackElement("img","https://webedc-files.s3.amazonaws.com/dev/prototype/imagewall/-10-il_1588xN.2376894700_2rqu.jpg");
+ShowUploadedImages();
+
 
 ?>
 
